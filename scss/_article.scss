@@ -1,0 +1,295 @@
+$mainColor: #bc8f8f;
+
+ main{
+    min-height: 100vh;
+    min-width: 280px;
+ }
+ .mainItemsContainer{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+.articleContainer{
+    width: 100%;
+    min-width: 280px;
+    padding: 10px;
+    .articleBox{
+        width: 100%;
+        .storeItem{
+            width: 100%;
+            .itemImage{
+                width: 100%;  
+                .front-img{
+                    width: 100%;
+                    max-width: 400px;
+                }
+                .otherImage{
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    img{
+                        width: 30%;
+                        max-width: 200px;
+                    }
+                }
+            }
+            .itemInfo{
+                margin-top: 20px;
+                h3{
+                    font-size: 30px;
+                }
+                p{
+                    margin-top: 20px;
+                    font-size: 25px;
+                    color: gray;
+                    font-weight: 600;
+                    span{
+                        color: $mainColor;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+.articleAction{
+    width: 100%;
+    padding: 10px;
+    .actionBox{
+        width: 100%;
+        .actionContainer{
+            width: 100%; 
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            .action{
+                display: flex;
+                .remove{
+                    background: rgb(160, 157, 157);
+                    padding: 5px;
+                    width: 50px;
+                    border-radius: 5px;
+                }
+                p{
+                    padding: 5px;
+                    width: 80px;
+                    border-radius: 5px;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 25px;
+                }
+                .add{
+                    background: rgb(253, 253, 253);
+                    padding: 5px;
+                    width: 50px;
+                    border: solid rgb(29, 212, 29) 2px;
+                    border-radius: 5px;
+                }
+            }
+            .total{
+                margin-top: 15px;
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: space-between;
+                width: 180px;
+                span{
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                p{
+                    font-size: 20px;
+                    font-weight: 600; 
+                    color: #bc8f8f;
+                    span{
+                        color: black;
+                        margin-right: 2px;
+                    }
+                }
+            }
+            .button{
+                margin-top: 5px;
+                button{
+                    height: 40px;
+                    padding: 5px;
+                    border-radius: 5px;
+                    background: $mainColor;
+                    border: 0;
+                    width: 250px;
+                    font-size: 20px;
+                }
+            }
+            .info{
+                margin-top: 10px;
+                p{
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                ul{
+                    padding: 0px 0px 10px 20px;
+        
+                    li{
+                        list-style: square !important;
+            
+                    }
+                    
+                }
+            }
+            
+        }
+    }
+}
+
+.articleDescription{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    padding: 10px;
+    min-width: 280px;
+    .details{
+        padding: 10px;
+        h3{
+            margin-bottom: 5px;
+        }
+        ul{
+            padding: 0px 0px 10px 10px;
+
+            li{
+                list-style: square !important;
+    
+            }
+            
+        }
+        
+    }
+
+}
+
+@media(min-width:460px){
+    .mainItemsContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .articleContainer{
+        width: 70%;
+        .articleBox{
+            width: 100%;
+            position: relative;
+            .storeItem{
+                width: 100%;
+                .itemImage{
+                    width: 100%;  
+                    .front-img{
+                        width: 100%;
+                        max-width: 700px;
+                    }
+                    .otherImage{
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        img{
+                            width: 30%;
+                            max-width: 200px;
+                        }
+                    }
+                }
+                .itemInfo{
+                    margin-top: 20px;
+                    h3{
+                        font-size: 30px;
+                    }
+                    p{
+                        margin-top: 20px;
+                        font-size: 25px;
+                        color: gray;
+                        font-weight: 600;
+                        span{
+                            color: $mainColor;
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    .articleAction{
+        width: 70%;
+        min-width: 300px;
+    }
+    .articleDescription{
+        width: 70%;
+    }
+
+}
+
+@media(min-width:800px){
+    .mainItemsContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: initial;
+        flex-wrap: wrap;
+    }
+    .articleContainer{
+        width: 60%;
+        .articleBox{
+            width: 100%;
+            .storeItem{
+                width: 100%;
+                .itemImage{
+                    width: 100%;  
+                    .front-img{
+                        width: 100%;
+                        max-width: 700px;
+                    }
+                    .otherImage{
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        img{
+                            width: 30%;
+                            max-width: 200px;
+                        }
+                    }
+                }
+                .itemInfo{
+                    margin-top: 20px;
+                    h3{
+                        font-size: 30px;
+                    }
+                    p{
+                        margin-top: 20px;
+                        font-size: 35px;
+                        color: gray;
+                        font-weight: 600;
+                        position: absolute;
+                        background-color: white;
+                        padding: 5px;
+                        top: 0;
+                        left: 0;
+                        z-index: 10;
+                        span{
+                            color: $mainColor;
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    .articleAction{
+        width: 30%;
+    }
+    .articleDescription{
+        width: 100%;
+    }
+
+}

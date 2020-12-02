@@ -1,0 +1,41 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    min-width: 280px;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    li{
+        list-style: none;
+    }
+    main{
+        min-height: 100vh;
+    }
+}
+.login{
+    background-image: url('../image/login.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sign{
+    background-image: url('../image/sign.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+@import "header";
+@import "purchase";
+@import "category";
+@import "bestSelling";
+@import "footer";
+@import "store";
+@import "article";
+@import "cart";
+
